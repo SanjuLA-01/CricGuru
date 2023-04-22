@@ -1,0 +1,8 @@
+.idea
+*.pyc
+*.xml
+*.h5
+src/assets/pose/pose_iter_440000.caffemodel
+src/assets/pose/pose_deploy_linevec.prototxt
+*.MOV
+*.jpg
