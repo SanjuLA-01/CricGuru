@@ -237,7 +237,7 @@ def processVideo(hand, area):
 
 def saveFileLocally(file):
     # Save the file to the server
-    save_path = os.path.join(assets_dir, 'videoinput', 'video.MOV')  # change this to the directory you want to save the file
+    save_path = os.path.join(assets_dir, 'videoinput', 'video.MOV')
     file.save(save_path)
 
 

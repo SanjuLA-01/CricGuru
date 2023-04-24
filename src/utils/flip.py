@@ -3,10 +3,6 @@ import cv2
 
 def flipImages(input_path, output_path):
 
-    # Set the path to the input and output directories
-    input_path = "D:/videooutput"
-    output_path = "D:/flipped"
-
     # Loop through all the files in the input directory
     for filename in os.listdir(input_path):
         # Check if the file is an image
