@@ -4,6 +4,7 @@ from src.services.processor import *
 routes_bp = Blueprint('routes', __name__)
 
 
+#Testing API
 @routes_bp.route('/')
 def home():
     data = {'message': 'Welcom to CricGuru API!'}
@@ -25,7 +26,7 @@ def upload_file():
     # Return a response to the client
     return response
 
-
+#Define the processing part
 @routes_bp.route('/process', methods=['POST'])
 def process_image():
     hand = request.form.get('hand')
@@ -38,7 +39,7 @@ def process_image():
         'shot': shotProper
     })
 
-
+#Images loading
 @routes_bp.route('/images/<path:filename>')
 def output_file(filename):
     return loadImage(filename)
